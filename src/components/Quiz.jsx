@@ -122,7 +122,7 @@ function Quiz() {
       <div className="min-h-screen flex items-center justify-center">
         <div className="text-center">
           <div className="w-12 h-12 border-4 border-indigo-500 border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
-          <p className="text-gray-600">Loading questions...</p>
+                      <p className="text-gray-600">Preparing learning session...</p>
         </div>
       </div>
     )
@@ -135,7 +135,7 @@ function Quiz() {
           <svg className="w-12 h-12 text-red-500 mx-auto mb-4" fill="currentColor" viewBox="0 0 20 20">
             <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clipRule="evenodd" />
           </svg>
-          <h3 className="text-lg font-semibold text-red-800 mb-2">Error Loading Quiz</h3>
+          <h3 className="text-lg font-semibold text-red-800 mb-2">Error Loading Learning Session</h3>
           <p className="text-red-600 mb-4">{state.error}</p>
           <button
             onClick={() => navigate('/')}
@@ -212,7 +212,7 @@ function Quiz() {
               disabled={!hasSelectedAnswer && !isAnswerLocked && !hasSkipped}
               className="bg-indigo-600 hover:bg-indigo-700 disabled:bg-indigo-300 disabled:cursor-not-allowed text-white font-semibold py-3 px-6 rounded-xl transition-all duration-200 transform hover:scale-105 disabled:scale-100"
             >
-              {isLastQuestion ? 'Finish Quiz' : 'Next Question'}
+              {isLastQuestion ? 'Complete Learning' : 'Next Question'}
             </button>
           </div>
           
@@ -233,7 +233,7 @@ function Quiz() {
         {!hasSelectedAnswer && !isAnswerLocked && (
           <div className="mt-6 text-center">
             <p className="text-gray-500 text-sm">
-              Select an answer to continue or skip the question. You have {state.timeRemaining} seconds remaining.
+              Select an answer to continue your learning or skip the question. You have {state.timeRemaining} seconds remaining.
             </p>
           </div>
         )}

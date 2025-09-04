@@ -27,13 +27,13 @@ function Home() {
       const questions = await fetchQuestions(selectedDifficulty, 10)
       
       if (questions.length === 0) {
-        throw new Error('No questions available. Please try again.')
+        throw new Error('No learning content available. Please try again.')
       }
       
       actions.setQuestions(questions)
       navigate('/quiz')
     } catch (err) {
-      setError(err.message || 'Failed to load questions. Please try again.')
+      setError(err.message || 'Failed to load learning content. Please try again.')
       actions.setError(err.message)
     } finally {
       setIsLoading(false)
@@ -47,10 +47,10 @@ function Home() {
         {/* Header */}
         <div className="text-center mb-8">
           <h1 className="text-4xl md:text-6xl font-bold text-gray-800 mb-4">
-            Quiz Master
+            NeuronIQ
           </h1>
           <p className="text-lg md:text-xl text-gray-600">
-            Test your knowledge with our interactive quiz!
+            Smart learning through intelligent questioning
           </p>
         </div>
 
@@ -157,18 +157,18 @@ function Home() {
           {isLoading ? (
             <div className="flex items-center justify-center space-x-2">
               <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
-              <span>Loading Questions...</span>
+              <span>Preparing Learning Session...</span>
             </div>
           ) : (
-            'Start Quiz'
+            'Start Learning'
           )}
         </button>
 
         {/* Features */}
         <div className="mt-8 text-center">
-          <p className="text-sm text-gray-500 mb-4">Features included:</p>
+          <p className="text-sm text-gray-500 mb-4">Smart learning features:</p>
           <div className="flex flex-wrap justify-center gap-2">
-            {['Timer', 'Progress Tracking', 'High Scores', 'Mobile Friendly', 'Accessibility'].map((feature) => (
+            {['Intelligent Timer', 'Learning Progress', 'Knowledge Tracking', 'Adaptive Difficulty', 'Neural Feedback'].map((feature) => (
               <span key={feature} className="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-xs">
                 {feature}
               </span>

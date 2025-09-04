@@ -1,6 +1,6 @@
-# Quiz Master - Interactive Quiz Application
+# NeuronIQ - Smart Learning Through Intelligent Questioning
 
-A modern, responsive quiz application built with React, Vite, and Tailwind CSS. Test your knowledge with questions from the Open Trivia Database API, featuring a clean UI, timer functionality, and comprehensive scoring system.
+A modern, responsive quiz application built with React, Vite, and Tailwind CSS. Enhance your learning with intelligent questions from the Open Trivia Database API, featuring a clean UI, timer functionality, and comprehensive scoring system designed for smart, focused learning.
 
 ## 🚀 Features
 
@@ -59,13 +59,13 @@ npm run dev
 
 ## 🎮 How to Use
 
-1. **Select Difficulty**: Choose from Easy, Medium, or Hard difficulty levels
-2. **Start Quiz**: Click "Start Quiz" to begin
-3. **Answer Questions**: Select your answer for each question
-4. **Timer**: Each question has a 30-second timer
-5. **Navigation**: Use Previous/Next buttons to navigate
-6. **View Results**: See your score and detailed answer review
-7. **High Scores**: Your scores are automatically saved locally
+1. **Select Difficulty**: Choose from Easy, Medium, or Hard difficulty levels for targeted learning
+2. **Start Learning**: Click "Start Quiz" to begin your intelligent learning session
+3. **Answer Questions**: Select your answer for each question and learn from feedback
+4. **Timer**: Each question has a 30-second timer to enhance focus and learning efficiency
+5. **Navigation**: Use Previous/Next buttons to navigate through your learning journey
+6. **View Results**: See your learning progress and detailed answer review
+7. **Track Progress**: Your learning achievements are automatically saved locally
 
 ## 🏗️ Project Structure
 
@@ -189,7 +189,11 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ## 🙏 Acknowledgments
 
-- [Open Trivia Database](https://opentdb.com/) for providing the quiz questions
+- [Open Trivia Database](https://opentdb.com/) for providing intelligent learning questions
 - [Tailwind CSS](https://tailwindcss.com/) for the utility-first CSS framework
 - [React](https://reactjs.org/) for the component-based architecture
 - [Vite](https://vitejs.dev/) for the fast build tool
+
+## 🧠 About NeuronIQ
+
+NeuronIQ represents the fusion of neuroscience-inspired learning principles with intelligent questioning systems. The name reflects our commitment to smart, focused learning that stimulates neural pathways and enhances knowledge retention through strategic questioning and immediate feedback.

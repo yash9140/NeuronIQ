@@ -80,7 +80,7 @@ function Results() {
           <div className="text-center mb-8">
             <div className="text-6xl mb-4">{getScoreEmoji()}</div>
             <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-2">
-              Quiz Complete!
+              Learning Session Complete!
             </h1>
             <p className="text-lg text-gray-600 mb-6">
               {getScoreMessage()}
@@ -156,13 +156,13 @@ function Results() {
               onClick={handleRestart}
               className="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-8 rounded-xl transition-all duration-200 transform hover:scale-105 shadow-lg"
             >
-              New Quiz
+              New Learning Session
             </button>
             <button
               onClick={handleTryAgain}
               className="bg-gray-600 hover:bg-gray-700 text-white font-semibold py-3 px-8 rounded-xl transition-all duration-200 transform hover:scale-105 shadow-lg"
             >
-              Try Again
+              Practice More
             </button>
             <button
               onClick={() => navigate('/')}
@@ -178,7 +178,7 @@ function Results() {
           showDetails ? 'opacity-100 transform translate-y-0' : 'opacity-0 transform translate-y-4'
         }`}>
           <h2 className="text-2xl font-semibold text-gray-800 mb-6 text-center">
-            Question Review
+            Learning Review
           </h2>
           
           <div className="space-y-4">
